@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>BizBud</title>
+    <style>
+        * {
+            user-select: none
+        }
+
+        body::-webkit-scrollbar {
+            width: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 scroll-smooth">
+
+    <header class="sticky top-0 left-0 z-50 backdrop-blur-md">
+        <nav class="flex justify-between items-center w-full h-auto shadow-md px-1 md:px-4 py-2">
+            <div class="w-10 h-10 cursor-pointer">
+                <h1 class="p-2 font-bold text-white text-xl">BizBud</h1>
+            </div>
+            <ul id="menulist"
+                class="hidden bg-blue-500 lg:bg-transparent z-10 absolute px-4 py-6 backdrop-blur-xl lg:backdrop-blur-none left-0 top-[100%] w-full shadow-md lg:shadow-none lg:static lg:flex lg:w-auto lg:p-0 gap-10 justify-end">
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#home">home</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#service">service</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#team">team</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#about">about</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#testimonials">testimonials</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#client">clients</a>
+                </li>
+                <li
+                    class="my-2 hover:bg-blue-400 lg:hover:bg-transparent list-none capitalize text-white cursor-pointer">
+                    <a href="#work">contact</a>
+                </li>
+                <button class="btn mlg:w-40 mlg:h-auto mlg:rounded-full mlg:bg-green-400
+                mlg:text-white mlg:hover:bg-green-600 mlg:capitalize mlg:text-sm">call now</button>
+            </ul>
+
+            <div id="menuBtn" class="w-10 h-10 p-2 lg:hidden">
+                <ion-icon id="menuorclose" class="text-white text-xl sm:text-2xl" name="grid-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>The Power <br> of Good Advice</h1>
+        <p class="sm:w-10/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veniam voluptatem, hic
+            recusandae ipsa rem officiis.</p>
+        <button class="btn">learn more</button>
+    </section>
+
+    <section id="service">
+        <h4 class="text-center">service</h4>
+        <h2 class="text-center">Taking Your Business to <br>the Next Level</h2>
+        <div class="customgrid">
+            <div class="text-justify">
+                <div class="w-full h-auto flex justify-center">
+                    <div
+                        class="w-16 h-16 rounded-full bg-violet-600 
+                after:content-[''] after:absolute relative after:w-20 after:h-20 after:rounded-full after:bg-violet-400 after:-z-10 after:left-2 after:top-2 mb-20">
+                    </div>
+                </div>
+                <span>Business Plans</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam quisquam quis sunt nostrum officia
+                facilis praesentium modi quibusdam, aspernatur esse cumque non! Excepturi deserunt, modi a eius eveniet
+                officiis.
+            </div>
+
+            <div class="text-justify">
+                <div class="w-full h-auto flex justify-center">
+                    <ion-icon class="text-8xl text-green-400" name="shapes-sharp"></ion-icon>
+                </div>
+                <br><br>
+                <span>Accounting Services</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam
+                quisquam
+                quis sunt nostrum officia facilis praesentium modi quibusdam, aspernatur esse cumque non! Excepturi
+                deserunt, modi a eius eveniet officiis.
+            </div>
+            <div class="text-justify">
+                <div class="w-full h-auto flex justify-center">
+                    <div class="w-16 h-16  bg-blue-400 
+            after:content-['']
+             after:absolute relative 
+             after:w-20 after:h-20  after:bg-yellow-300 after:-z-10 after:left-2 after:top-2 mb-20">
+                    </div>
+                </div>
+                <span>Finance Optimization</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam
+                quisquam
+                quis sunt nostrum
+                officia
+                facilis praesentium modi quibusdam, aspernatur esse cumque non! Excepturi deserunt, modi a eius eveniet
+                officiis.
+            </div>
+        </div>
+    </section>
+
+    <section id="exp" class="bg-[#16163f] py-32">
+        <h2 class="text-white">We’re Good with Numbers</h2>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center mx-auto items-center gap-10 w-full h-auto">
+            <div class="text-center">
+                <h3 class="text-white text-8xl my-5 font-semibold">17</h3>
+                <h6>Years of Experience</h6>
+            </div>
+            <div class="w-5 h-5 rounded-full bg-lime-600 mx-auto md:hidden"></div>
+            <div class="text-center">
+                <h3 class="text-white text-8xl my-5 font-semibold">297</h3>
+                <h6>Qualified Experts</h6>
+            </div>
+            <div class="w-5 h-5 rounded-full bg-lime-600 mx-auto md:hidden"></div>
+            <div class="text-center">
+                <h3 class="text-white text-8xl my-5 font-semibold">150</h3>
+                <h6>Clients Every Year</h6>
+            </div>
+            <div class="w-5 h-5 rounded-full bg-lime-600 mx-auto md:hidden"></div>
+            <div class="text-center">
+                <h3 class="text-white text-8xl my-5 font-semibold">25</h3>
+                <h6>Intl. Partners</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h4>about</h4>
+        <h2 class="text-left">Our Experts Are the Finest</h2>
+        <p class="md:w-10/12 w-full py-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti temporibus
+            velit nemo a suscipit quo incidunt iste voluptatibus neque enim porro eaque ipsam exercitationem recusandae
+            nihil, quos odit consectetur! Assumenda possimus rem modi quasi esse earum unde sed eius voluptates rerum
+            cum, placeat omnis quaerat, tempora praesentium aliquid officia perferendis, ex cumque autem in ea? Vel
+            suscipit unde et, ratione eligendi ipsum. Harum eligendi hic quo ipsam vitae modi magni!</p>
+    </section>
+
+    <section id="testimonials" class="py-32 px-0">
+        <h4 class="text-center">TESTIMONIALS</h4>
+        <h2 class="py-5 bg-orange-200 my-0">“our testimonials”</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+            <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+                <div
+                    class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
+                </div>
+                <div
+                    class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+                </div>
+                <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                    <img class="mx-auto h-12" src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
+                        alt="">
+                    <h6 class="text-indigo-700 text-center">Circuit Cipher</h6>
+                    <figure class="mt-10">
+                        <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                            <p class="text-orange-600">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                expedita voluptas culpa
+                                sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                        </blockquote>
+                        <figcaption class="mt-10">
+                            <img class="mx-auto size-10 rounded-full"
+                                src="https://megikevents.com/wp-content/uploads/2017/10/speaker3-min.jpg" alt="">
+                            <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                                <div class="font-semibold text-gray-900">Max Wilcox
+                                </div>
+                                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <div class="text-gray-600">CEO of Workcation</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+                <div
+                    class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
+                </div>
+                <div
+                    class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+                </div>
+                <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                    <img class="mx-auto h-12" src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
+                        alt="">
+                    <h6 class="text-indigo-700 text-center">Data Dynamics
+                    </h6>
+                    <figure class="mt-10">
+                        <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                            <p class="text-orange-600">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                expedita voluptas culpa
+                                sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                        </blockquote>
+                        <figcaption class="mt-10">
+                            <img class="mx-auto size-10 rounded-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQH83iHZFHSe8oftIjDikjz9XPpmQOKqBYVcW1UK3MRd7Z4PbbC2TkYfBN9zbdSkAd78&usqp=CAU"
+                                alt="">
+                            <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                                <div class="font-semibold text-gray-900">Maxine Gibbs</div>
+                                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <div class="text-gray-600">CEO of Workcation</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+                <div
+                    class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
+                </div>
+                <div
+                    class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+                </div>
+                <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                    <img class="mx-auto h-12" src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
+                        alt="">
+                    <h6 class="text-indigo-700 text-center">Nano Nexus</h6>
+                    <figure class="mt-10">
+                        <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                            <p class="text-orange-600">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                expedita voluptas culpa
+                                sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                        </blockquote>
+                        <figcaption class="mt-10">
+                            <img class="mx-auto size-10 rounded-full"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="">
+                            <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                                <div class="font-semibold text-gray-900">Judith Black</div>
+                                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                                    <circle cx="1" cy="1" r="1" />
+                                </svg>
+                                <div class="text-gray-600">CEO of Workcation</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="bg-indigo-950">
+        <h2 class="text-white">our team</h2>
+        <!-- testing start -->
+        <ul role="list" class="divide-y divide-gray-100">
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Leslie Alexander</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">leslie.alexander@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Co-Founder / CEO</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Last seen <time datetime="2023-01-23T13:23Z">3h
+                            ago</time>
+                    </p>
+                </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Michael Foster</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">michael.foster@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Co-Founder / CTO</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Last seen <time datetime="2023-01-23T13:23Z">3h
+                            ago</time>
+                    </p>
+                </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Dries Vincent</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">dries.vincent@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Business Relations</p>
+                    <div class="mt-1 flex items-center gap-x-1.5">
+                        <div class="flex-none rounded-full bg-emerald-500/20 p-1">
+                            <div class="size-1.5 rounded-full bg-emerald-500"></div>
+                        </div>
+                        <p class="text-sm font-semibold text-white">Online</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Lindsay Walton</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">lindsay.walton@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Contactar</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Last seen <time datetime="2023-01-23T13:23Z">3h
+                            ago</time>
+                    </p>
+                </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Courtney Henry</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">courtney.henry@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Managing Director</p>
+                    <p class="mt-1 text-sm font-semibold text-white">Last seen <time datetime="2023-01-23T13:23Z">3h
+                            ago</time>
+                    </p>
+                </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+                <div class="flex min-w-0 gap-x-4">
+                    <img class="size-12 flex-none rounded-full bg-gray-50"
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="min-w-0 flex-auto">
+                        <p class="text-lg font-semibold text-white">Tom Cook</p>
+                        <p class="mt-1 truncate text-sm font-semibold text-white">tom.cook@example.com</p>
+                    </div>
+                </div>
+                <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                    <p class="text-lg text-white">Director of Product</p>
+                    <div class="mt-1 flex items-center gap-x-1.5">
+                        <div class="flex-none rounded-full bg-emerald-500/20 p-1">
+                            <div class="size-1.5 rounded-full bg-emerald-500"></div>
+                        </div>
+                        <p class="text-sm font-semibold text-white">Online</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- testing end -->
+    </section>
+
+    <section id="client" class="px-0">
+        <div class="w-full h-20 bg-indigo-500 border-b border-white">
+            <h6 class="text-center pt-10">OUR HAPPY CLIENTS</h6>
+        </div>
+        <div
+            class="w-full bg-indigo-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center mx-auto items-center gap-10 h-auto text-indigo-800 font-extrabold italic text-4xl py-20 text-center">
+            <div class="flex justify-center hover:text-white cursor-default not-italic">
+                <div class="mx-2">BAR</div>
+                <div>121</div>
+            </div>
+            <div class="hover:text-white cursor-default font-sans">HUNTER</div>
+            <div class="hover:text-white cursor-default font-serif">Locographix</div>
+            <div class="hover:text-white cursor-default">Mid Dreams</div>
+            <div class="hover:text-white cursor-default font-mono">DEV JONES</div>
+        </div>
+    </section>
+
+    <section id="work" class="flex flex-col md:flex-row gap-5">
+        <div class="md:w-1/2">
+            <h4>contact</h4>
+            <h2 class="text-left">Let’s Work Together</h2>
+            <p class="py-0 text-xl">500 Terry Francine St. San Francisco, CA 94158
+                <br>
+                info@mysite.com
+                <br>
+                Tel: 123-456-7890
+            </p>
+            <div class="flex justify-start gap-5 my-6 items-center text-2xl md:text-4xl text-white">
+                <ion-icon class="hover:animate-bounce cursor-pointer hover:scale-125" name="logo-linkedin"></ion-icon>
+                <ion-icon class="hover:animate-bounce cursor-pointer hover:scale-125" name="logo-facebook"></ion-icon>
+                <ion-icon class="hover:animate-bounce cursor-pointer hover:scale-125" name="logo-xing"></ion-icon>
+                <ion-icon class="hover:animate-bounce cursor-pointer hover:scale-125" name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+        <div class="md:w-1/2 h-auto">
+            <form action="#" class="flex flex-col gap-4">
+                <input type="text" placeholder="name"
+                    class="h-12 placeholder:capitalize bg-transparent w-full ring-1 rounded-md  ring-teal-300 placeholder:text-white px-3 py-1">
+                <input type="email" placeholder="email"
+                    class="h-12 placeholder:capitalize bg-transparent w-full ring-1 rounded-md  ring-teal-300 placeholder:text-white px-3 py-1">
+                <textarea type="text" placeholder="write message"
+                    class="placeholder:capitalize bg-transparent w-full h-32 ring-1 rounded-md  ring-teal-300 placeholder:text-white px-3 py-1"></textarea>
+                <input class="btn" type="submit" value="send" />
+            </form>
+        </div>
+
+    </section>
+    <section class="px-0 py-0 md:px-4">
+        <iframe class="w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91883.41005779903!2d90.31664014900055!3d23.99712877662054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dafdd8aa72a1%3A0xe3a23793cb030fdb!2sGazipur!5e1!3m2!1sen!2sbd!4v1734131125023!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="py-0 bg-blue-400">
+        <h6 class="m-0 sm:py-2 text-center">© 2025 by BizBud. Powered and secured by Coding Section</h6>
+    </section>
+
+    <div id="totop" class="fixed hidden z-20 rounded-xl justify-center items-center hover:bg-teal-500 shadow-md right-5 bottom-5 bg-teal-600 w-10 h-10">
+        <ion-icon class="text-white animate-bounce" name="chevron-up-outline"></ion-icon>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
